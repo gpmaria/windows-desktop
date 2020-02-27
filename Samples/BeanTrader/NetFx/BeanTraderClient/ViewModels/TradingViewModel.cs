@@ -109,7 +109,7 @@ namespace BeanTraderClient.ViewModels
                 return sellerId.ToString();
             }
 
-            if (!traderNames.TryGetValue(sellerId, out string traderName))
+            if (!traderNames.TryGetValue(sellerId, out var traderName))
             {
                 var names = await TradingService.GetTraderNamesAsync(new Guid[] { sellerId }).ConfigureAwait(false);
 
