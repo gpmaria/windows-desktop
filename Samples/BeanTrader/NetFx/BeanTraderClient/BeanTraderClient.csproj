@@ -74,4 +74,7 @@
   <ItemGroup>
     <Compile Remove="ViewModels\OldUnusedViewModel.cs" />
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\RelevantName\RelevantName.csproj" />
+  </ItemGroup>
 </Project>
